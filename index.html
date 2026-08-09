@@ -185,7 +185,7 @@
     .event-card h3 { font-size: 1.3rem; margin-bottom: 0.5rem; color: var(--brand-green); }
     .event-card p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.25rem; }
 
-    /* SECTION 1: VENUE GALLERY MASONRY */
+    /* VENUE GALLERY MASONRY */
     .gallery-masonry {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -219,7 +219,7 @@
       .gallery-item.tall, .gallery-item.standard { height: 280px; }
     }
 
-    /* SECTIONS 2 & 3: EXPERIENCE SPLIT SECTIONS */
+    /* EXPERIENCE SPLIT SECTIONS */
     .split-section {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -233,7 +233,7 @@
       .split-section.reverse-mobile { display: flex; flex-direction: column-reverse; }
     }
 
-    /* SECTION 4: FOOD & CATERING BOX */
+    /* FOOD & CATERING BOX */
     .catering-box {
       background: var(--bg-card);
       border-radius: 12px;
@@ -242,16 +242,19 @@
     }
 
     /* Customer Reviews */
-    .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+    .reviews-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem; }
     .review-card {
       background: var(--bg-surface);
       border: 1px solid var(--border-color);
       border-radius: 8px;
       padding: 1.5rem;
       box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
-    .review-stars { color: var(--brand-gold); margin-bottom: 0.5rem; }
-    .review-author { font-weight: 700; font-size: 0.95rem; margin-top: 1rem; color: var(--brand-green); }
+    .review-text { font-size: 0.925rem; color: var(--text-main); line-height: 1.5; font-style: normal; }
+    .review-author { font-weight: 700; font-size: 0.9rem; margin-top: 1.25rem; color: var(--brand-green); border-top: 1px solid var(--border-color); padding-top: 0.75rem; }
 
     .trust-badge {
       text-align: center;
@@ -533,7 +536,7 @@
     </div>
   </section>
 
-  <!-- SECTION 1: VENUE GALLERY -->
+  <!-- VENUE GALLERY -->
   <section class="section" id="gallery" style="background: var(--bg-surface);">
     <div class="container">
       <div class="section-title">
@@ -564,7 +567,7 @@
     </div>
   </section>
 
-  <!-- SECTION 2: WEDDING EXPERIENCE -->
+  <!-- WEDDING EXPERIENCE -->
   <section class="section">
     <div class="container">
       <div class="split-section reverse-mobile">
@@ -578,7 +581,7 @@
     </div>
   </section>
 
-  <!-- SECTION 3: CELEBRATION EXPERIENCE -->
+  <!-- CELEBRATION EXPERIENCE -->
   <section class="section" style="background: var(--bg-card);">
     <div class="container">
       <div class="split-section">
@@ -592,7 +595,7 @@
     </div>
   </section>
 
-  <!-- SECTION 4: FOOD & CATERING -->
+  <!-- FOOD & CATERING -->
   <section class="section">
     <div class="container">
       <div class="catering-box">
@@ -608,35 +611,69 @@
     </div>
   </section>
 
-  <!-- Customer Reviews Section -->
+  <!-- Customer Reviews Section (EXACT REAL REVIEWS INTEGRATED) -->
   <section class="section" id="reviews" style="background: var(--bg-surface);">
     <div class="container">
       <div class="section-title">
         <h2>What Guests Are Saying</h2>
         <p>Real feedback from guests and hosts who experienced celebrations at Evergreen Courtyard.</p>
       </div>
+      
       <div class="reviews-grid">
         <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p>"Accommodating staff and beautiful garden venue. Perfect place for intimate gatherings and weddings."</p>
-          <div class="review-author">— Angela Padua</div>
+          <p class="review-text">"Spacious space for all types of event. Perfect for weddings. They also serve mouth watering foods. Surely will booked again for my next event."</p>
+          <div class="review-author">ANGELA PADUA</div>
         </div>
+
         <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p>"Great place for events! The food was delicious, especially the roast beef, and the staff were very attentive."</p>
-          <div class="review-author">— Mark Louie Cano</div>
+          <p class="review-text">"Good place for weddings and birthdays. Friendly service staff and nice scenery"</p>
+          <div class="review-author">MARK LOUIE CANO</div>
         </div>
+
         <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <p>"Very nice venue with ample parking space. Cold breeze and relaxing atmosphere in Silang."</p>
-          <div class="review-author">— Leonides Lacson</div>
+          <p class="review-text">"It's a pretty place. The only downside is that it's right beside a church and the church's speakers are loud enough that it could kind of affect your own event."</p>
+          <div class="review-author">SARAH VICENCIO</div>
+        </div>
+
+        <div class="review-card">
+          <p class="review-text">"Perfect for wedding events. They also serve good food."</p>
+          <div class="review-author">GARINGO JORIZ</div>
+        </div>
+
+        <div class="review-card">
+          <p class="review-text">"Very nice with parking areas, not too large and it's very clean."</p>
+          <div class="review-author">LEONIDES LACSON</div>
+        </div>
+
+        <div class="review-card">
+          <p class="review-text">"Top-notch quality and service."</p>
+          <div class="review-author">LEANNE NICOLETTE BUCAG</div>
+        </div>
+
+        <div class="review-card">
+          <p class="review-text">"Great venue, but poor coordination."</p>
+          <div class="review-author">JESI KAREN</div>
+        </div>
+
+        <div class="review-card">
+          <p class="review-text">"Thank you Evergreen Courtyard, The staff are very accommodating, the food is really recommended, especially their roast beef 😍😍😍. Thank you to our caterer, Casa moriones Artisan Catering & Events . More blessings to your business .."</p>
+          <div class="review-author">ANTONETTE MICHAEL</div>
+        </div>
+
+        <div class="review-card">
+          <p class="review-text">"Nice scenery and they also have a large parking lot."</p>
+          <div class="review-author">JUNSKIEEE DANUCO</div>
+        </div>
+
+        <div class="review-card">
+          <p class="review-text">"The place is solid and the food is delicious."</p>
+          <div class="review-author">JIMO SHIAWASE</div>
         </div>
       </div>
 
       <div class="trust-badge">
         <span style="color: var(--brand-gold); font-size: 1.1rem;">★★★★★</span><br>
-        <strong>4.8 Google Rating</strong> — 16 Reviews<br>
-        <span>Real experiences from guests who visited Evergreen Courtyard.</span>
+        <strong>4.8 Google Rating</strong> — 16 Reviews
       </div>
     </div>
   </section>
