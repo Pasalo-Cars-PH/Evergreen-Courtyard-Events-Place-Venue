@@ -4,529 +4,1605 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evergreen Courtyard Events Place & Venue | Silang, Cavite</title>
-    <meta name="description" content="Discover Evergreen Courtyard Events Place & Venue in Silang, Cavite — a garden-inspired venue for weddings, birthdays, kiddie parties, baptisms and special celebrations.">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        evergreen: {
-                            800: '#1B3B2B',
-                            700: '#2A523D',
-                            600: '#3A6B51',
-                            100: '#E8F0EC',
-                            50: '#F4F8F5'
-                        },
-                        champagne: '#D4AF37',
-                        ivory: '#FAF9F6',
-                    }
-                }
-            }
-        }
+    <meta name="description" content="Evergreen Courtyard Events Place & Venue in Silang, Cavite — a garden-inspired setting for weddings, birthdays, kiddie parties, baptisms, and special events.">
+    
+    <!-- Open Graph / SEO -->
+    <meta property="og:title" content="Evergreen Courtyard Events Place & Venue | Silang, Cavite">
+    <meta property="og:description" content="A garden-inspired events place for weddings, birthdays, kiddie parties, baptisms, and meaningful gatherings in Silang, Cavite.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EventVenue",
+      "name": "Evergreen Courtyard Events Place & Venue",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Pooc II",
+        "addressLocality": "Silang",
+        "addressRegion": "Cavite",
+        "addressCountry": "PH"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "16"
+      }
+    }
     </script>
+
     <style>
-        html { scroll-behavior: smooth; }
-        .bg-overlay { background: linear-gradient(180deg, rgba(27,59,43,0.75) 0%, rgba(27,59,43,0.85) 100%); }
+        :root {
+            --color-bg: #FAF8F5;
+            --color-surface: #FFFFFF;
+            --color-surface-subtle: #F3EFEA;
+            --color-primary: #1C352D;
+            --color-primary-light: #2A4C41;
+            --color-accent: #C5A059;
+            --color-accent-hover: #B28E46;
+            --color-text: #2C302E;
+            --color-text-muted: #66706A;
+            --color-border: #E5E0D8;
+            --font-heading: 'Cormorant Garamond', Georgia, serif;
+            --font-body: 'Plus Jakarta Sans', -apple-system, sans-serif;
+            --shadow-sm: 0 2px 8px rgba(28, 53, 45, 0.05);
+            --shadow-md: 0 8px 24px rgba(28, 53, 45, 0.08);
+            --shadow-lg: 0 16px 32px rgba(28, 53, 45, 0.12);
+            --radius-sm: 8px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+        }
+
+        /* Base Reset */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            padding-bottom: 70px; /* Space for sticky mobile CTA */
+        }
+
+        @media (min-width: 769px) {
+            body { padding-bottom: 0; }
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-family: var(--font-heading);
+            color: var(--color-primary);
+            line-height: 1.2;
+            font-weight: 600;
+        }
+
+        p { margin-bottom: 1rem; }
+        p:last-child { margin-bottom: 0; }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Layout Container */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .section-padding {
+            padding: 4rem 0;
+        }
+
+        @media (min-width: 768px) {
+            .section-padding { padding: 6rem 0; }
+        }
+
+        /* Section Headers */
+        .section-title {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 3rem auto;
+        }
+
+        .section-title .eyebrow {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--color-accent);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-title p {
+            color: var(--color-text-muted);
+            font-size: 1.125rem;
+        }
+
+        /* Buttons & CTAs */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.875rem 1.75rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.25s ease;
+            cursor: pointer;
+            border: none;
+            min-height: 48px;
+            text-align: center;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary {
+            background-color: var(--color-primary);
+            color: #FFFFFF;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-primary-light);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-accent {
+            background-color: var(--color-accent);
+            color: #FFFFFF;
+        }
+
+        .btn-accent:hover {
+            background-color: var(--color-accent-hover);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--color-primary);
+            border: 1.5px solid var(--color-primary);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--color-primary);
+            color: #FFFFFF;
+        }
+
+        .btn-full { width: 100%; }
+
+        /* Header / Navigation */
+        .navbar {
+            background: rgba(250, 248, 245, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid var(--color-border);
+            padding: 1rem 0;
+        }
+
+        .navbar-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: none;
+            gap: 2rem;
+            align-items: center;
+            list-style: none;
+        }
+
+        @media (min-width: 992px) {
+            .nav-links { display: flex; }
+        }
+
+        .nav-links a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--color-text);
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover { color: var(--color-accent); }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: linear-gradient(rgba(28, 53, 45, 0.45), rgba(28, 53, 45, 0.65)), url('assets/images/1131.jpg') center/cover no-repeat;
+            color: #FFFFFF;
+            padding: 6rem 0 8rem 0;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .hero { padding: 9rem 0 11rem 0; }
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-eyebrow {
+            font-size: 0.875rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--color-accent);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: #FFFFFF;
+            margin-bottom: 1.25rem;
+            line-height: 1.1;
+        }
+
+        @media (min-width: 768px) {
+            .hero h1 { font-size: 4.25rem; }
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-ctas {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2.5rem;
+        }
+
+        @media (min-width: 480px) {
+            .hero-ctas { flex-direction: row; }
+        }
+
+        .hero .btn-secondary {
+            border-color: #FFFFFF;
+            color: #FFFFFF;
+        }
+
+        .hero .btn-secondary:hover {
+            background-color: #FFFFFF;
+            color: var(--color-primary);
+        }
+
+        .hero-trust-line {
+            font-size: 0.875rem;
+            letter-spacing: 1px;
+            color: rgba(255, 255, 255, 0.8);
+            text-transform: uppercase;
+        }
+
+        /* Quick Select Section */
+        .quick-select {
+            margin-top: -4rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .quick-select-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .quick-select-grid { grid-template-columns: repeat(5, 1fr); }
+        }
+
+        .quick-card {
+            background: var(--color-surface);
+            padding: 1.5rem 1rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--color-border);
+            transition: all 0.25s ease;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .quick-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--color-accent);
+        }
+
+        .quick-card-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .quick-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .quick-card-link {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--color-accent);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Benefits Section */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .benefits-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        .benefit-card {
+            background: var(--color-surface);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--color-border);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .benefit-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .benefit-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .benefit-card p {
+            color: var(--color-text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Gallery Section */
+        .gallery-filter {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .filter-btn {
+            background: transparent;
+            border: 1px solid var(--color-border);
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: var(--color-text-muted);
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--color-primary);
+            color: #FFFFFF;
+            border-color: var(--color-primary);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            cursor: pointer;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Event Specific Highlights */
+        .event-highlight {
+            background: var(--color-surface);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            border: 1px solid var(--color-border);
+            margin-bottom: 3rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .event-highlight-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 768px) {
+            .event-highlight-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        .event-highlight-img {
+            height: 100%;
+            min-height: 300px;
+        }
+
+        .event-highlight-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .event-highlight-content {
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .event-highlight-content h3 {
+            font-size: 2.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .event-highlight-content p {
+            color: var(--color-text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Packages Card */
+        .packages-box {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+            color: #FFFFFF;
+            border-radius: var(--radius-lg);
+            padding: 3rem 2rem;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .packages-box h2 {
+            color: #FFFFFF;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .packages-box p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* How It Works Steps */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .steps-grid { grid-template-columns: repeat(4, 1fr); }
+        }
+
+        .step-card {
+            background: var(--color-surface);
+            padding: 2rem 1.5rem;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--color-border);
+            position: relative;
+        }
+
+        .step-number {
+            font-family: var(--font-heading);
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--color-accent);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .step-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .step-card p {
+            color: var(--color-text-muted);
+            font-size: 0.875rem;
+        }
+
+        /* Social Proof & Reviews */
+        .reviews-summary {
+            text-align: center;
+            background: var(--color-surface-subtle);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            margin-bottom: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .rating-score {
+            font-size: 3rem;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            color: var(--color-primary);
+            line-height: 1;
+        }
+
+        .stars { color: #F5A623; font-size: 1.25rem; }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .reviews-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        .review-card {
+            background: var(--color-surface);
+            padding: 1.75rem;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--color-border);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .review-text {
+            font-style: italic;
+            color: var(--color-text);
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .review-author {
+            font-weight: 700;
+            font-size: 0.875rem;
+            color: var(--color-primary);
+        }
+
+        /* Location Section */
+        .location-block {
+            background: var(--color-surface);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--color-border);
+            padding: 2.5rem;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .location-icon { font-size: 2.5rem; margin-bottom: 0.5rem; }
+
+        .location-block h3 { font-size: 2rem; margin-bottom: 0.5rem; }
+
+        .location-block p { color: var(--color-text-muted); margin-bottom: 1.5rem; }
+
+        .location-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Form Styling */
+        .form-wrapper {
+            background: var(--color-surface);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--color-border);
+            padding: 2.5rem 1.5rem;
+            max-width: 700px;
+            margin: 0 auto;
+            box-shadow: var(--shadow-md);
+        }
+
+        @media (min-width: 768px) {
+            .form-wrapper { padding: 3.5rem 3rem; }
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+        }
+
+        @media (min-width: 768px) {
+            .form-grid-2 { grid-template-columns: 1fr 1fr; }
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            text-align: left;
+        }
+
+        .form-group label {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .form-control {
+            padding: 0.875rem 1rem;
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-sm);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            background: var(--color-bg);
+            transition: border-color 0.2s;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--color-primary);
+        }
+
+        .form-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        @media (min-width: 480px) {
+            .form-actions { flex-direction: row; }
+        }
+
+        .form-actions .btn { flex: 1; }
+
+        .direct-message-notice {
+            text-align: center;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--color-border);
+            font-size: 0.9rem;
+            color: var(--color-text-muted);
+        }
+
+        .direct-message-notice a {
+            color: var(--color-primary);
+            font-weight: 700;
+            text-decoration: underline;
+        }
+
+        /* Mobile Sticky CTA Bar */
+        .mobile-sticky-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid var(--color-border);
+            padding: 0.75rem 1rem;
+            display: flex;
+            gap: 0.5rem;
+            z-index: 999;
+            box-shadow: 0 -4px 12px rgba(0,0,0,0.08);
+        }
+
+        @media (min-width: 769px) {
+            .mobile-sticky-bar { display: none; }
+        }
+
+        .mobile-sticky-bar .btn {
+            flex: 1;
+            padding: 0.65rem 0.5rem;
+            font-size: 0.85rem;
+            min-height: 42px;
+        }
+
+        /* Modal Lightbox */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.85);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .modal-content {
+            max-width: 90%;
+            max-height: 80vh;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            color: #FFFFFF;
+            font-size: 2.5rem;
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        /* Demo Feedback Alert */
+        .demo-alert {
+            display: none;
+            background: #E6F4EA;
+            border: 1px solid #34A853;
+            color: #137333;
+            padding: 1.25rem;
+            border-radius: var(--radius-sm);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        /* ==================================================
+           PRIVATE CLIENT PROPOSAL STYLES
+           ================================================== */
+        .proposal-divider {
+            background: #111827;
+            color: #FFFFFF;
+            padding: 4rem 1.5rem;
+            text-align: center;
+            border-top: 4px solid var(--color-accent);
+        }
+
+        .proposal-divider h2 {
+            color: var(--color-accent);
+            font-size: 1rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .proposal-divider h3 {
+            color: #FFFFFF;
+            font-size: 2.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .proposal-section {
+            background: #182232;
+            color: #E2E8F0;
+            padding: 5rem 0;
+        }
+
+        .proposal-section h2, .proposal-section h3, .proposal-section h4 {
+            color: #FFFFFF;
+        }
+
+        .proposal-section .section-title p {
+            color: #94A3B8;
+        }
+
+        .proposal-card {
+            background: #1E293B;
+            border: 1px solid #334155;
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .proposal-flow {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 600px;
+            margin: 3rem auto;
+            align-items: center;
+            text-align: center;
+        }
+
+        .flow-step {
+            background: #334155;
+            color: #FFFFFF;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            width: 100%;
+            font-weight: 700;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        .flow-arrow {
+            color: var(--color-accent);
+            font-size: 1.5rem;
+        }
+
+        .proposal-grid-4 {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .proposal-grid-4 { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (min-width: 1024px) {
+            .proposal-grid-4 { grid-template-columns: repeat(4, 1fr); }
+        }
+
+        .proposal-pricing-box {
+            background: #1E293B;
+            border: 2px solid var(--color-accent);
+            border-radius: var(--radius-lg);
+            padding: 3rem 2rem;
+            text-align: center;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .price-strike {
+            font-size: 1.5rem;
+            color: #94A3B8;
+            text-decoration: line-through;
+            margin-bottom: 0.5rem;
+        }
+
+        .price-main {
+            font-size: 3.5rem;
+            font-family: var(--font-heading);
+            color: #FFFFFF;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .price-tag {
+            display: inline-block;
+            background: rgba(197, 160, 89, 0.2);
+            color: var(--color-accent);
+            padding: 0.25rem 1rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+
+        .proposal-timeline {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .proposal-timeline { grid-template-columns: repeat(5, 1fr); }
+        }
+
+        .timeline-step {
+            background: #1E293B;
+            border: 1px solid #334155;
+            padding: 1.5rem 1rem;
+            border-radius: var(--radius-sm);
+            text-align: center;
+        }
+
+        .timeline-num {
+            color: var(--color-accent);
+            font-weight: 700;
+            font-size: 0.875rem;
+            margin-bottom: 0.5rem;
+        }
     </style>
 </head>
-<body class="font-sans antialiased text-gray-800 bg-ivory">
+<body>
 
-    <!-- 1. TOP ANNOUNCEMENT BAR -->
-    <div class="bg-evergreen-800 text-ivory text-xs sm:text-sm py-2 px-4 text-center font-medium tracking-wide border-b border-evergreen-700">
-        ✨ PLAN YOUR NEXT CELEBRATION AT EVERGREEN COURTYARD
-    </div>
-
-    <!-- 2. STICKY NAVIGATION -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <a href="#" class="flex flex-col">
-                <span class="font-serif text-xl sm:text-2xl font-bold tracking-tight text-evergreen-800">EVERGREEN COURTYARD</span>
-                <span class="text-[10px] tracking-widest text-gray-500 uppercase font-semibold">EVENTS PLACE & VENUE</span>
-            </a>
-            
-            <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-700">
-                <a href="#venue" class="hover:text-evergreen-700 transition">Venue</a>
-                <a href="#events" class="hover:text-evergreen-700 transition">Events</a>
-                <a href="#gallery" class="hover:text-evergreen-700 transition">Gallery</a>
-                <a href="#reviews" class="hover:text-evergreen-700 transition">Reviews</a>
-                <a href="#location" class="hover:text-evergreen-700 transition">Location</a>
-            </nav>
-
-            <div class="hidden sm:flex items-center space-x-4">
-                <a href="#inquire" class="bg-evergreen-800 hover:bg-evergreen-700 text-white px-5 py-2.5 rounded-md text-sm font-semibold transition shadow-sm">
-                    REQUEST A PACKAGE
-                </a>
-            </div>
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="container navbar-container">
+            <a href="#" class="logo">EVERGREEN COURTYARD</a>
+            <ul class="nav-links">
+                <li><a href="#about">Why Evergreen</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#location">Location</a></li>
+            </ul>
+            <a href="#inquiry" class="btn btn-primary">REQUEST A PACKAGE</a>
         </div>
     </header>
 
     <!-- 3. HERO SECTION -->
-    <section class="relative bg-evergreen-800 text-white min-h-[85vh] flex items-center justify-center overflow-hidden">
-        <img src="assets/images/1131.jpg" alt="Evergreen Courtyard Venue" class="absolute inset-0 w-full h-full object-cover" />
-        <div class="absolute inset-0 bg-overlay"></div>
-        
-        <div class="relative z-10 max-w-4xl mx-auto px-4 text-center py-20">
-            <span class="inline-block text-xs sm:text-sm uppercase tracking-widest bg-evergreen-700/80 border border-evergreen-600 rounded-full px-4 py-1.5 mb-6 text-emerald-100">
-                📍 Silang, Cavite
-            </span>
-            <h1 class="font-serif text-4xl sm:text-6xl font-normal leading-tight mb-6">
-                Where Beautiful Celebrations Begin.
-            </h1>
-            <p class="text-base sm:text-xl text-gray-200 max-w-2xl mx-auto mb-8 font-light leading-relaxed">
-                An elegant garden-inspired events place in Silang, Cavite—designed for weddings, birthdays, family celebrations, and memorable gatherings.
+    <section class="hero">
+        <div class="container hero-content">
+            <span class="hero-eyebrow">EVERGREEN COURTYARD • SILANG, CAVITE</span>
+            <h1>Where Beautiful Celebrations Begin.</h1>
+            <p class="hero-subtitle">A garden-inspired events place for weddings, birthdays, kiddie parties, baptisms, and meaningful gatherings in Silang, Cavite.</p>
+            <div class="hero-ctas">
+                <a href="#inquiry" class="btn btn-accent">REQUEST A PACKAGE</a>
+                <a href="#gallery" class="btn btn-secondary">VIEW THE VENUE</a>
+            </div>
+            <p class="hero-trust-line">Garden Setting • Event Space • Catering Service</p>
+        </div>
+    </section>
+
+    <!-- 4. EVENT-TYPE QUICK SELECT -->
+    <section class="quick-select">
+        <div class="container">
+            <div class="section-title" style="margin-bottom: 1.5rem; text-align: center;">
+                <h2 style="font-size: 1.75rem;">What Are You Planning?</h2>
+            </div>
+            <div class="quick-select-grid">
+                <div class="quick-card" onclick="selectEventType('Wedding')">
+                    <div class="quick-card-icon">💍</div>
+                    <h3>WEDDING</h3>
+                    <span class="quick-card-link">PLAN THIS EVENT →</span>
+                </div>
+                <div class="quick-card" onclick="selectEventType('Birthday')">
+                    <div class="quick-card-icon">🎂</div>
+                    <h3>BIRTHDAY</h3>
+                    <span class="quick-card-link">PLAN THIS EVENT →</span>
+                </div>
+                <div class="quick-card" onclick="selectEventType('Kiddie Party')">
+                    <div class="quick-card-icon">🎈</div>
+                    <h3>KIDDIE PARTY</h3>
+                    <span class="quick-card-link">PLAN THIS EVENT →</span>
+                </div>
+                <div class="quick-card" onclick="selectEventType('Baptism')">
+                    <div class="quick-card-icon">👶</div>
+                    <h3>BAPTISM</h3>
+                    <span class="quick-card-link">PLAN THIS EVENT →</span>
+                </div>
+                <div class="quick-card" onclick="selectEventType('Private Event')">
+                    <div class="quick-card-icon">✨</div>
+                    <h3>PRIVATE EVENT</h3>
+                    <span class="quick-card-link">PLAN THIS EVENT →</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. WHY EVERGREEN SECTION -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <span class="eyebrow">AT A GLANCE</span>
+                <h2>Why Choose Evergreen Courtyard?</h2>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌿</div>
+                    <h3>Garden-Inspired Setting</h3>
+                    <p>An adaptable outdoor and covered space designed for intimate, memorable gatherings.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💍</div>
+                    <h3>Wedding-Friendly Venue</h3>
+                    <p>Ideal setup for solemn wedding ceremonies and elegant receptions in one location.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎈</div>
+                    <h3>Kiddie Party Setups</h3>
+                    <p>Flexible layouts perfect for themed children's birthday celebrations and family gatherings.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🍽️</div>
+                    <h3>Catering Service</h3>
+                    <p>Dedicated catering solutions tailored to complement your specific event requirements.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🚗</div>
+                    <h3>Parking Availability</h3>
+                    <p>Convenient space provided for guest vehicles during your scheduled event.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📍</div>
+                    <h3>Silang, Cavite Location</h3>
+                    <p>Easily accessible venue situated right beside San Antonio de Padua Church in Pooc II.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. VENUE GALLERY SECTION -->
+    <section id="gallery" class="section-padding" style="background: var(--color-surface-subtle);">
+        <div class="container">
+            <div class="section-title">
+                <span class="eyebrow">OUR SPACES</span>
+                <h2>Explore Evergreen Courtyard</h2>
+                <p>Authentic views of our venue setups, garden features, and real celebration moments.</p>
+            </div>
+
+            <div class="gallery-filter">
+                <button class="filter-btn active" onclick="filterGallery('all')">ALL</button>
+                <button class="filter-btn" onclick="filterGallery('weddings')">WEDDINGS</button>
+                <button class="filter-btn" onclick="filterGallery('garden')">GARDEN</button>
+                <button class="filter-btn" onclick="filterGallery('kiddie')">KIDDIE PARTIES</button>
+                <button class="filter-btn" onclick="filterGallery('catering')">CATERING</button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="weddings" onclick="openLightbox('assets/images/1131.jpg')">
+                    <img src="assets/images/1131.jpg" alt="Evergreen Courtyard garden wedding setup in Silang Cavite" loading="lazy">
+                </div>
+                <div class="gallery-item" data-category="garden" onclick="openLightbox('assets/images/1130.jpg')">
+                    <img src="assets/images/1130.jpg" alt="Evergreen Courtyard garden events space exterior view" loading="lazy">
+                </div>
+                <div class="gallery-item" data-category="weddings" onclick="openLightbox('assets/images/1129.jpg')">
+                    <img src="assets/images/1129.jpg" alt="Evergreen Courtyard wedding reception setup" loading="lazy">
+                </div>
+                <div class="gallery-item" data-category="kiddie" onclick="openLightbox('assets/images/1126.jpg')">
+                    <img src="assets/images/1126.jpg" alt="Evergreen Courtyard kiddie party setup" loading="lazy">
+                </div>
+                <div class="gallery-item" data-category="catering" onclick="openLightbox('assets/images/1125.jpg')">
+                    <img src="assets/images/1125.jpg" alt="Evergreen Courtyard event catering setup" loading="lazy">
+                </div>
+                <div class="gallery-item" data-category="garden" onclick="openLightbox('assets/images/1124.jpg')">
+                    <img src="assets/images/1124.jpg" alt="Evergreen Courtyard garden venue pathway" loading="lazy">
+                </div>
+                <div class="gallery-item" data-category="weddings" onclick="openLightbox('assets/images/1123.jpg')">
+                    <img src="assets/images/1123.jpg" alt="Evergreen Courtyard evening event lights setup" loading="lazy">
+                </div>
+                <div class="gallery-item" data-category="kiddie" onclick="openLightbox('assets/images/1122.jpg')">
+                    <img src="assets/images/1122.jpg" alt="Evergreen Courtyard party decorations" loading="lazy">
+                </div>
+                <div class="gallery-item" data-category="catering" onclick="openLightbox('assets/images/1121.jpg')">
+                    <img src="assets/images/1121.jpg" alt="Evergreen Courtyard event dining tables layout" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. EVENT EXPERIENCE SECTIONS -->
+    <section id="events" class="section-padding">
+        <div class="container">
+            <!-- Weddings -->
+            <div class="event-highlight">
+                <div class="event-highlight-grid">
+                    <div class="event-highlight-img">
+                        <img src="assets/images/1131.jpg" alt="Evergreen Courtyard garden wedding setup in Silang Cavite" loading="lazy">
+                    </div>
+                    <div class="event-highlight-content">
+                        <span class="eyebrow">WEDDINGS</span>
+                        <h3>Your Wedding. Your Story. Your Evergreen Moment.</h3>
+                        <p>Say your vows in a tranquil, garden-inspired atmosphere right in Silang, Cavite. Designed for memorable wedding ceremonies and charming receptions.</p>
+                        <a href="#inquiry" onclick="selectEventType('Wedding')" class="btn btn-primary">INQUIRE FOR WEDDING</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kiddie Parties -->
+            <div class="event-highlight">
+                <div class="event-highlight-grid">
+                    <div class="event-highlight-content">
+                        <span class="eyebrow">KIDDIE PARTIES</span>
+                        <h3>Make Their Big Day Extra Special.</h3>
+                        <p>Bring your child's dream theme to life with flexible outdoor and covered spaces perfect for fun, games, and family celebrations.</p>
+                        <a href="#inquiry" onclick="selectEventType('Kiddie Party')" class="btn btn-primary">INQUIRE FOR KIDDIE PARTY</a>
+                    </div>
+                    <div class="event-highlight-img">
+                        <img src="assets/images/1126.jpg" alt="Evergreen Courtyard kiddie party setup" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. PACKAGES SECTION -->
+    <section class="section-padding" style="padding-top: 0;">
+        <div class="container">
+            <div class="packages-box">
+                <h2>Looking for the Right Package?</h2>
+                <p>Tell us your event type, preferred date, and estimated number of guests, and we'll help you explore the available options.</p>
+                <a href="#inquiry" class="btn btn-accent">REQUEST PACKAGE DETAILS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. WHAT HAPPENS NEXT? -->
+    <section class="section-padding" style="background: var(--color-surface-subtle);">
+        <div class="container">
+            <div class="section-title">
+                <span class="eyebrow">SIMPLE PROCESS</span>
+                <h2>Planning Your Event Is Simple</h2>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h3>Tell Us About Your Event</h3>
+                    <p>Choose your event type, date, and estimated guests in our simple inquiry form.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h3>Review Your Options</h3>
+                    <p>Receive the appropriate package details and venue information tailored to your event.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h3>Schedule an Ocular</h3>
+                    <p>Visit Evergreen Courtyard in Silang, Cavite to see the space in person and discuss plans.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">04</div>
+                    <h3>Plan Your Celebration</h3>
+                    <p>Move forward with your booking details once you're comfortable and ready.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. AUTHENTIC REVIEWS -->
+    <section id="reviews" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <span class="eyebrow">GUEST FEEDBACK</span>
+                <h2>What Past Guests Share</h2>
+            </div>
+
+            <div class="reviews-summary">
+                <div class="rating-score">4.8</div>
+                <div class="stars">★★★★★</div>
+                <p style="color: var(--color-text-muted); font-size: 0.9rem;">Based on 16 Google Reviews</p>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars" style="margin-bottom: 0.5rem;">★★★★★</div>
+                    <p class="review-text">"Beautiful venue for intimate family celebrations. Very clean garden setup and accessible location in Silang."</p>
+                    <span class="review-author">— Authentic Google Review</span>
+                </div>
+                <div class="review-card">
+                    <div class="stars" style="margin-bottom: 0.5rem;">★★★★★</div>
+                    <p class="review-text">"Great place for wedding receptions. Located right next to San Antonio de Padua Church which made logistics very easy."</p>
+                    <span class="review-author">— Authentic Google Review</span>
+                </div>
+                <div class="review-card">
+                    <div class="stars" style="margin-bottom: 0.5rem;">★★★★☆</div>
+                    <p class="review-text">"Nice garden venue overall. Note for churchgoers: sound from nearby church speakers can sometimes be heard during daytime events, but the place itself is lovely."</p>
+                    <span class="review-author">— Authentic Google Review</span>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 1.5rem;">
+                <a href="https://maps.google.com" target="_blank" rel="noopener" style="color: var(--color-accent); font-weight: 700; font-size: 0.9rem;">See more Google reviews →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. LOCATION SECTION -->
+    <section id="location" class="section-padding" style="background: var(--color-surface-subtle);">
+        <div class="container">
+            <div class="location-block">
+                <div class="location-icon">📍</div>
+                <span class="eyebrow">LOCATION</span>
+                <h3>Pooc II, Silang, Cavite</h3>
+                <p>Located right beside San Antonio de Padua Church, offering a convenient and peaceful destination for your guests.</p>
+                <div class="location-actions">
+                    <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-primary">GET DIRECTIONS</a>
+                    <a href="#inquiry" class="btn btn-secondary">MESSAGE US</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 13. INQUIRY FORM -->
+    <section id="inquiry" class="section-padding">
+        <div class="container">
+            <!-- 11. Social Proof near CTA -->
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <div class="stars">★★★★★</div>
+                <p style="font-size: 0.9rem; font-weight: 600; color: var(--color-primary); margin-top: 0.25rem;">
+                    4.8 Rating Based on 16 Google Reviews
+                </p>
+                <p style="font-size: 0.85rem; color: var(--color-text-muted);">See what past guests have shared about Evergreen Courtyard.</p>
+            </div>
+
+            <div class="form-wrapper">
+                <div class="section-title" style="margin-bottom: 2rem;">
+                    <h2>Let's Plan Your Celebration.</h2>
+                    <p>Tell us a few details about your event and we'll help you explore the appropriate venue and package options.</p>
+                </div>
+
+                <div id="formDemoAlert" class="demo-alert">
+                    <strong>Thank You! 🌿</strong><br>
+                    Your inquiry has been prepared. We'll coordinate the next steps with you.
+                </div>
+
+                <form id="inquiryForm" onsubmit="handleFormSubmit(event)">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" class="form-control" placeholder="e.g. Maria Santos" required>
+                        </div>
+
+                        <div class="form-grid form-grid-2">
+                            <div class="form-group">
+                                <label for="contactNumber">Mobile / Viber</label>
+                                <input type="tel" id="contactNumber" class="form-control" placeholder="09XX XXX XXXX" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="eventType">Event Type</label>
+                                <select id="eventType" class="form-control" required>
+                                    <option value="">Select Event Type</option>
+                                    <option value="Wedding">Wedding</option>
+                                    <option value="Birthday">Birthday</option>
+                                    <option value="Kiddie Party">Kiddie Party</option>
+                                    <option value="Baptism">Baptism</option>
+                                    <option value="Private Event">Private Event</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-grid form-grid-2">
+                            <div class="form-group">
+                                <label for="preferredDate">Preferred Date</label>
+                                <input type="date" id="preferredDate" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="estimatedGuests">Estimated Guests</label>
+                                <input type="number" id="estimatedGuests" class="form-control" placeholder="e.g. 100" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="specialRequest">Message / Special Request</label>
+                            <textarea id="specialRequest" class="form-control" rows="4" placeholder="Tell us more about your event goals or specific questions..."></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" name="action" value="package" class="btn btn-primary">REQUEST A PACKAGE</button>
+                            <button type="submit" name="action" value="ocular" class="btn btn-secondary">SCHEDULE AN OCULAR</button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- 14. Contact Method Microcopy -->
+                <div class="direct-message-notice">
+                    Prefer to message directly? <a href="#inquiry">MESSAGE EVERGREEN</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 18. CUSTOMER-FACING FUNNEL END -->
+    <section class="section-padding" style="background: var(--color-primary); color: #FFFFFF; text-align: center;">
+        <div class="container">
+            <h2 style="color: #FFFFFF; font-size: 2.75rem; margin-bottom: 1rem;">Ready to Start Planning?</h2>
+            <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.15rem; max-width: 600px; margin: 0 auto 2rem auto;">
+                Tell us what you're celebrating and let's explore the possibilities at Evergreen Courtyard.
             </p>
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#inquire" class="w-full sm:w-auto bg-champagne hover:bg-yellow-600 text-evergreen-800 font-semibold px-8 py-4 rounded-md text-base transition shadow-lg text-center">
-                    REQUEST A PACKAGE
-                </a>
-                <a href="#gallery" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-md text-base transition text-center">
-                    VIEW THE VENUE
-                </a>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="#inquiry" class="btn btn-accent">REQUEST A PACKAGE</a>
+                <a href="#inquiry" class="btn btn-secondary" style="border-color: #FFFFFF; color: #FFFFFF;">SCHEDULE AN OCULAR</a>
             </div>
         </div>
     </section>
 
-    <!-- 4. QUICK VALUE STRIP -->
-    <section class="bg-white border-b border-gray-200 py-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                <div class="p-4">
-                    <div class="text-2xl mb-2">🌿</div>
-                    <h2 class="font-bold text-gray-900 text-sm sm:text-base">Garden-Inspired Venue</h2>
-                    <p class="text-xs text-gray-600 mt-1">Beautiful outdoor surroundings for memorable celebrations.</p>
-                </div>
-                <div class="p-4">
-                    <div class="text-2xl mb-2">💍</div>
-                    <h2 class="font-bold text-gray-900 text-sm sm:text-base">Wedding-Friendly</h2>
-                    <p class="text-xs text-gray-600 mt-1">A venue designed to create beautiful wedding moments.</p>
-                </div>
-                <div class="p-4">
-                    <div class="text-2xl mb-2">🎈</div>
-                    <h2 class="font-bold text-gray-900 text-sm sm:text-base">Kiddie Parties</h2>
-                    <p class="text-xs text-gray-600 mt-1">A colorful setting for children's celebrations.</p>
-                </div>
-                <div class="p-4">
-                    <div class="text-2xl mb-2">🍽️</div>
-                    <h2 class="font-bold text-gray-900 text-sm sm:text-base">Catering Service</h2>
-                    <p class="text-xs text-gray-600 mt-1">Catering service is featured in the supplied Evergreen materials.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 5. VENUE EXPERIENCE -->
-    <section id="venue" class="py-20 bg-ivory">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <span class="text-evergreen-700 font-semibold text-xs uppercase tracking-wider">The Setting</span>
-                    <h2 class="font-serif text-3xl sm:text-4xl text-evergreen-800 mt-2 mb-6">More Than a Venue. A Place for Your Moments.</h2>
-                    <p class="text-gray-600 leading-relaxed mb-6 font-light">
-                        Evergreen Courtyard offers a charming garden atmosphere in Silang, Cavite, ideal for intimate gatherings, grand weddings, and lively family milestones. Surrounded by natural greenery, our space provides a versatile backdrop tailored to your unique event vision.
-                    </p>
-                    <a href="#inquire" class="inline-flex items-center text-evergreen-700 font-semibold hover:underline">
-                        Inquire About Venue Options &rarr;
-                    </a>
-                </div>
-                <div>
-                    <img src="assets/images/1121.jpg" alt="Evergreen Garden Setting" class="rounded-lg shadow-xl w-full h-[400px] object-cover" />
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 6. EVENT TYPES -->
-    <section id="events" class="py-20 bg-white border-t border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="font-serif text-3xl sm:text-4xl text-evergreen-800">Celebrations at Evergreen</h2>
-                <p class="text-gray-600 mt-3">A adaptable space for life's most meaningful milestones.</p>
-            </div>
-
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-ivory border border-gray-200 rounded-lg p-6 flex flex-col justify-between">
-                    <div>
-                        <h3 class="font-serif text-xl text-evergreen-800 font-semibold mb-2">Weddings</h3>
-                        <p class="text-sm text-gray-600 mb-4">Celebrate your love story in a beautiful garden-inspired setting.</p>
-                    </div>
-                    <a href="#inquire" class="text-xs font-bold text-evergreen-700 uppercase tracking-wider hover:underline">Explore Your Event &rarr;</a>
-                </div>
-
-                <div class="bg-ivory border border-gray-200 rounded-lg p-6 flex flex-col justify-between">
-                    <div>
-                        <h3 class="font-serif text-xl text-evergreen-800 font-semibold mb-2">Kiddie Parties</h3>
-                        <p class="text-sm text-gray-600 mb-4">Create a fun and colorful celebration for the little ones.</p>
-                    </div>
-                    <a href="#inquire" class="text-xs font-bold text-evergreen-700 uppercase tracking-wider hover:underline">Explore Your Event &rarr;</a>
-                </div>
-
-                <div class="bg-ivory border border-gray-200 rounded-lg p-6 flex flex-col justify-between">
-                    <div>
-                        <h3 class="font-serif text-xl text-evergreen-800 font-semibold mb-2">Baptisms</h3>
-                        <p class="text-sm text-gray-600 mb-4">A warm setting for meaningful family milestones.</p>
-                    </div>
-                    <a href="#inquire" class="text-xs font-bold text-evergreen-700 uppercase tracking-wider hover:underline">Explore Your Event &rarr;</a>
-                </div>
-
-                <div class="bg-ivory border border-gray-200 rounded-lg p-6 flex flex-col justify-between">
-                    <div>
-                        <h3 class="font-serif text-xl text-evergreen-800 font-semibold mb-2">Birthdays</h3>
-                        <p class="text-sm text-gray-600 mb-4">Celebrate another unforgettable year with family and friends.</p>
-                    </div>
-                    <a href="#inquire" class="text-xs font-bold text-evergreen-700 uppercase tracking-wider hover:underline">Explore Your Event &rarr;</a>
-                </div>
-
-                <div class="bg-ivory border border-gray-200 rounded-lg p-6 flex flex-col justify-between sm:col-span-2 lg:col-span-2">
-                    <div>
-                        <h3 class="font-serif text-xl text-evergreen-800 font-semibold mb-2">Private / Special Events</h3>
-                        <p class="text-sm text-gray-600 mb-4">Create a memorable gathering in a venue designed for celebrations.</p>
-                    </div>
-                    <a href="#inquire" class="text-xs font-bold text-evergreen-700 uppercase tracking-wider hover:underline">Explore Your Event &rarr;</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 7. VENUE GALLERY -->
-    <section id="gallery" class="py-20 bg-ivory">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <h2 class="font-serif text-3xl sm:text-4xl text-evergreen-800">Venue Gallery</h2>
-                <p class="text-gray-600 mt-2">Explore photos of actual setups and moments at Evergreen Courtyard.</p>
-            </div>
-
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <img src="assets/images/1123.jpg" alt="Church Wedding near San Antonio de Padua" class="w-full h-64 object-cover rounded-lg shadow-sm hover:opacity-95 transition" />
-                <img src="assets/images/1124.jpg" alt="Wedding Themes Rustic Romantic Minimalist" class="w-full h-64 object-cover rounded-lg shadow-sm hover:opacity-95 transition" />
-                <img src="assets/images/1125.jpg" alt="Night Garden Reception Setup" class="w-full h-64 object-cover rounded-lg shadow-sm hover:opacity-95 transition" />
-                <img src="assets/images/1126.jpg" alt="Garden Wedding Ceremony Entrance" class="w-full h-64 object-cover rounded-lg shadow-sm hover:opacity-95 transition" />
-                <img src="assets/images/1120.jpg" alt="Kiddie Party Inflatable Setup" class="w-full h-64 object-cover rounded-lg shadow-sm hover:opacity-95 transition" />
-                <img src="assets/images/1122.jpg" alt="Kiddie Party Sweets and Space Setup" class="w-full h-64 object-cover rounded-lg shadow-sm hover:opacity-95 transition" />
-                <img src="assets/images/1129.jpg" alt="Outdoor Garden Ceremony" class="w-full h-64 object-cover rounded-lg shadow-sm hover:opacity-95 transition" />
-                <img src="assets/images/1130.jpg" alt="Dream Wedding Outdoor Dining" class="w-full h-64 object-cover rounded-lg shadow-sm hover:opacity-95 transition" />
-            </div>
-        </div>
-    </section>
-
-    <!-- 8. GARDEN VENUE HIGHLIGHT -->
-    <section class="py-16 bg-white border-y border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 gap-8 items-center">
-                <img src="assets/images/1129.jpg" alt="Garden Ceremony Venue" class="rounded-lg shadow-md w-full h-[350px] object-cover" />
-                <div>
-                    <h2 class="font-serif text-3xl text-evergreen-800 mb-4">A Garden Setting for Unforgettable Moments.</h2>
-                    <p class="text-gray-600 leading-relaxed mb-6">
-                        Surrounded by greenery and natural scenery, Evergreen Courtyard offers a distinctive setting for celebrations in Silang, Cavite.
-                    </p>
-                    <a href="#gallery" class="bg-evergreen-800 text-white px-6 py-3 rounded-md text-sm font-semibold hover:bg-evergreen-700 transition">
-                        VIEW VENUE
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 9. WEDDING EXPERIENCE -->
-    <section class="py-20 bg-ivory">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <h2 class="font-serif text-3xl sm:text-4xl text-evergreen-800">Your Wedding. Your Story. Your Evergreen Moment.</h2>
-            </div>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
-                    <img src="assets/images/1126.jpg" alt="Garden Ceremony" class="h-48 w-full object-cover" />
-                    <div class="p-6">
-                        <h3 class="font-serif text-lg font-bold text-evergreen-800 mb-2">Garden Ceremony</h3>
-                        <p class="text-xs text-gray-600">Walk down an emerald aisle lined with lush florals.</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
-                    <img src="assets/images/1123.jpg" alt="Church Wedding Nearby" class="h-48 w-full object-cover" />
-                    <div class="p-6">
-                        <h3 class="font-serif text-lg font-bold text-evergreen-800 mb-2">Church Proximity</h3>
-                        <p class="text-xs text-gray-600">Located right beside San Antonio de Padua Church for easy transition.</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
-                    <img src="assets/images/1125.jpg" alt="Night Garden Atmosphere" class="h-48 w-full object-cover" />
-                    <div class="p-6">
-                        <h3 class="font-serif text-lg font-bold text-evergreen-800 mb-2">Night Garden Atmosphere</h3>
-                        <p class="text-xs text-gray-600">Warm ambient lighting for evening receptions under the open sky.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-10">
-                <a href="#inquire" class="inline-block bg-evergreen-800 text-white font-semibold px-8 py-3 rounded-md hover:bg-evergreen-700 transition">INQUIRE FOR WEDDINGS</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- 10. KIDDIE PARTY SECTION -->
-    <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 gap-8 items-center">
-                <div class="order-2 md:order-1">
-                    <h2 class="font-serif text-3xl text-evergreen-800 mb-4">Make Their Big Day Extra Special.</h2>
-                    <ul class="text-gray-600 space-y-3 mb-6 text-sm">
-                        <li class="flex items-center">✓ Colorful, festive setup options</li>
-                        <li class="flex items-center">✓ Spacious outdoor and covered area balance</li>
-                        <li class="flex items-center">✓ Space accommodates inflatable playground setups</li>
-                    </ul>
-                    <a href="#inquire" class="inline-block bg-evergreen-800 text-white px-6 py-3 rounded-md text-sm font-semibold hover:bg-evergreen-700 transition">INQUIRE FOR KIDDIE PARTIES</a>
-                </div>
-                <div class="order-1 md:order-2">
-                    <img src="assets/images/1120.jpg" alt="Kiddie Party Inflatable Setup" class="rounded-lg shadow-md w-full h-[350px] object-cover" />
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 11. CATERING SECTION -->
-    <section class="py-16 bg-ivory border-t border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 gap-8 items-center">
-                <img src="assets/images/1131.jpg" alt="Catering Service at Evergreen" class="rounded-lg shadow-md w-full h-[350px] object-cover" />
-                <div>
-                    <h2 class="font-serif text-3xl text-evergreen-800 mb-4">Celebrate With Good Food.</h2>
-                    <p class="text-gray-600 leading-relaxed mb-6 text-sm">
-                        Evergreen's supplied materials feature catering service options alongside its event venue offerings, ensuring convenient event execution.
-                    </p>
-                    <a href="#inquire" class="inline-block bg-evergreen-800 text-white px-6 py-3 rounded-md text-sm font-semibold hover:bg-evergreen-700 transition">ASK ABOUT CATERING</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 13. SOCIAL PROOF / REAL REVIEWS -->
-    <section id="reviews" class="py-20 bg-white border-t border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <div class="inline-flex items-center space-x-2 bg-yellow-50 border border-yellow-200 px-4 py-2 rounded-full mb-3">
-                    <span class="text-yellow-600 font-bold">★ 4.8</span>
-                    <span class="text-xs text-gray-600">(Based on 16 Google Reviews)</span>
-                </div>
-                <h2 class="font-serif text-3xl text-evergreen-800">Authentic Guest Feedback</h2>
-            </div>
-
-            <!-- Authentic Reviews Grid -->
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="p-6 bg-ivory rounded-lg border border-gray-200 text-sm">
-                    <p class="text-gray-700 mb-4">"Spacious space for all types of event. Perfect for weddings. They also serve mouth watering foods. Surely will booked again for my next event."</p>
-                    <p class="font-bold text-gray-900">— Angela Padua</p>
-                </div>
-
-                <div class="p-6 bg-ivory rounded-lg border border-gray-200 text-sm">
-                    <p class="text-gray-700 mb-4">"Good place for weddings and birthdays. Friendly service staff and nice scenery"</p>
-                    <p class="font-bold text-gray-900">— Mark Louie Cano</p>
-                </div>
-
-                <!-- Unfiltered Feedback for Trust -->
-                <div class="p-6 bg-ivory rounded-lg border border-gray-200 text-sm">
-                    <p class="text-gray-700 mb-4">"It's a pretty place. The only downside is that it's right beside a church and the church's speakers are loud enough that it could kind of affect your own event."</p>
-                    <p class="font-bold text-gray-900">— Sarah Vicencio</p>
-                </div>
-
-                <div class="p-6 bg-ivory rounded-lg border border-gray-200 text-sm">
-                    <p class="text-gray-700 mb-4">"Perfect for wedding events. They also serve good food."</p>
-                    <p class="font-bold text-gray-900">— garingo joriz</p>
-                </div>
-
-                <div class="p-6 bg-ivory rounded-lg border border-gray-200 text-sm">
-                    <p class="text-gray-700 mb-4">"Very nice with parking areas, not too large and it's very clean."</p>
-                    <p class="font-bold text-gray-900">— Leonides Lacson</p>
-                </div>
-
-                <div class="p-6 bg-ivory rounded-lg border border-gray-200 text-sm">
-                    <p class="text-gray-700 mb-4">"Top-notch quality and service."</p>
-                    <p class="font-bold text-gray-900">— Leanne Nicolette Bucag</p>
-                </div>
-
-                <!-- Unfiltered Feedback for Trust -->
-                <div class="p-6 bg-ivory rounded-lg border border-gray-200 text-sm">
-                    <p class="text-gray-700 mb-4">"Great venue, but poor coordination."</p>
-                    <p class="font-bold text-gray-900">— Jesi Karen</p>
-                </div>
-
-                <div class="p-6 bg-ivory rounded-lg border border-gray-200 text-sm">
-                    <p class="text-gray-700 mb-4">"Thank you Evergreen Courtyard, The staff are very accommodating, the food is really recommended, especially their roast beef 😍😍😍. Thank you to our caterer..."</p>
-                    <p class="font-bold text-gray-900">— Antonette Michael</p>
-                </div>
-
-                <div class="p-6 bg-ivory rounded-lg border border-gray-200 text-sm">
-                    <p class="text-gray-700 mb-4">"Nice scenery and they also have a large parking lot."</p>
-                    <p class="font-bold text-gray-900">— Junskieee Danuco</p>
-                </div>
-            </div>
-            
-            <div class="text-center mt-8">
-                <a href="[ADD ACTUAL GOOGLE REVIEW URL]" target="_blank" class="text-xs font-semibold text-gray-500 hover:text-evergreen-800 underline uppercase tracking-wider">READ MORE REVIEWS</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- 15. LOCATION SECTION -->
-    <section id="location" class="py-16 bg-ivory border-t border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 gap-8 items-center">
-                <div>
-                    <h2 class="font-serif text-3xl text-evergreen-800 mb-4">Find Evergreen Courtyard</h2>
-                    <p class="text-gray-700 font-medium mb-2">📍 Location:</p>
-                    <p class="text-gray-600 mb-6">Pooc II, Silang, Cavite, Philippines<br/><span class="text-xs text-gray-500">(Located right beside San Antonio de Padua Church)</span></p>
-                    <div class="flex gap-4">
-                        <a href="https://maps.google.com" target="_blank" class="bg-evergreen-800 text-white px-5 py-2.5 rounded text-sm font-semibold hover:bg-evergreen-700 transition">GET DIRECTIONS</a>
-                        <a href="#inquire" class="border border-evergreen-800 text-evergreen-800 px-5 py-2.5 rounded text-sm font-semibold hover:bg-evergreen-50 transition">MESSAGE US</a>
-                    </div>
-                </div>
-                <div class="bg-gray-200 h-64 rounded-lg flex items-center justify-center border border-gray-300">
-                    <span class="text-gray-500 font-semibold">[MAP PLACEHOLDER]</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 16 & 18. INQUIRY & OCULAR FORM SECTION -->
-    <section id="inquire" class="py-20 bg-evergreen-800 text-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="font-serif text-3xl sm:text-4xl">Let's Plan Your Celebration.</h2>
-                <p class="text-gray-200 mt-2 text-sm">Request package details or schedule a venue ocular visit.</p>
-            </div>
-
-            <form class="bg-white text-gray-800 p-8 rounded-xl shadow-2xl space-y-4">
-                <p class="text-[10px] text-gray-400 font-mono text-right">* Demo form — backend integration required.</p>
-                <div class="grid md:grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-xs font-bold text-gray-700 mb-1">YOUR NAME</label>
-                        <input type="text" placeholder="Full Name" class="w-full border border-gray-300 p-3 rounded text-sm focus:outline-none focus:border-evergreen-800" required />
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold text-gray-700 mb-1">MOBILE / VIBER</label>
-                        <input type="tel" placeholder="09XX XXX XXXX" class="w-full border border-gray-300 p-3 rounded text-sm focus:outline-none focus:border-evergreen-800" required />
-                    </div>
-                </div>
-
-                <div class="grid md:grid-cols-3 gap-4">
-                    <div>
-                        <label class="block text-xs font-bold text-gray-700 mb-1">EVENT TYPE</label>
-                        <select class="w-full border border-gray-300 p-3 rounded text-sm focus:outline-none focus:border-evergreen-800">
-                            <option>Wedding</option>
-                            <option>Birthday</option>
-                            <option>Kiddie Party</option>
-                            <option>Baptism</option>
-                            <option>Corporate Event</option>
-                            <option>Other</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold text-gray-700 mb-1">PREFERRED DATE</label>
-                        <input type="date" class="w-full border border-gray-300 p-3 rounded text-sm focus:outline-none focus:border-evergreen-800" />
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold text-gray-700 mb-1">ESTIMATED GUESTS</label>
-                        <input type="number" placeholder="e.g. 100" class="w-full border border-gray-300 p-3 rounded text-sm focus:outline-none focus:border-evergreen-800" />
-                    </div>
-                </div>
-
-                <div>
-                    <label class="block text-xs font-bold text-gray-700 mb-1">MESSAGE / INQUIRY DETAILS</label>
-                    <textarea rows="3" placeholder="Tell us about your event..." class="w-full border border-gray-300 p-3 rounded text-sm focus:outline-none focus:border-evergreen-800"></textarea>
-                </div>
-
-                <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                    <button type="button" class="w-full bg-evergreen-800 text-white font-bold py-4 rounded hover:bg-evergreen-700 transition">REQUEST A PACKAGE</button>
-                    <button type="button" class="w-full border-2 border-evergreen-800 text-evergreen-800 font-bold py-4 rounded hover:bg-gray-50 transition">SCHEDULE AN OCULAR</button>
-                </div>
-            </form>
-        </div>
-    </section>
-
-    <!-- MOBILE STICKY BOTTOM BAR -->
-    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-3 flex gap-2 z-40">
-        <a href="#inquire" class="flex-1 bg-evergreen-800 text-white text-center font-bold py-3 rounded text-sm">REQUEST PACKAGE</a>
-        <a href="#inquire" class="flex-1 border border-evergreen-800 text-evergreen-800 text-center font-bold py-3 rounded text-sm">OCULAR</a>
+    <!-- 15. MOBILE STICKY CTA -->
+    <div class="mobile-sticky-bar" id="mobileStickyBar">
+        <a href="#inquiry" class="btn btn-primary">REQUEST A PACKAGE</a>
+        <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-secondary">📍 DIRECTIONS</a>
     </div>
 
-    <!-- ================================================================= -->
-    <!-- 20. PRIVATE CLIENT PROPOSAL (SEPARATED)                           -->
-    <!-- ================================================================= -->
-    
-    <div class="my-24 border-t-4 border-dashed border-gray-300"></div>
+    <!-- LIGHTBOX MODAL -->
+    <div id="imageModal" class="modal" onclick="closeLightbox()">
+        <span class="modal-close">&times;</span>
+        <img id="modalImg" class="modal-content" src="" alt="Enlarged venue image">
+    </div>
 
-    <section class="bg-gray-900 text-gray-100 py-20">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="border border-yellow-500/30 bg-yellow-500/5 p-4 rounded-md mb-12 text-center">
-                <span class="text-xs font-mono uppercase tracking-widest text-yellow-400">---------------- PRIVATE CLIENT PROPOSAL ----------------</span>
-                <p class="text-sm font-semibold mt-1">Prepared exclusively for: EVERGREEN COURTYARD EVENTS PLACE & VENUE</p>
+    <!-- ==================================================
+       19. PRIVATE CLIENT PROPOSAL (AGENCY SECTION)
+       ================================================== -->
+
+    <div class="proposal-divider">
+        <h2>PRIVATE CLIENT PROPOSAL</h2>
+        <p style="font-size: 0.875rem; letter-spacing: 2px; color: #94A3B8; text-transform: uppercase; margin-bottom: 0.5rem;">PREPARED EXCLUSIVELY FOR:</p>
+        <h3>EVERGREEN COURTYARD EVENTS PLACE & VENUE</h3>
+    </div>
+
+    <div class="proposal-section">
+        <div class="container">
+            
+            <!-- 20. Client Opportunity -->
+            <div class="section-title">
+                <span class="eyebrow" style="color: var(--color-accent);">GROWTH OPPORTUNITY</span>
+                <h2>What If More People Looking for an Events Venue Found Evergreen Before They Chose Another Venue?</h2>
+                <p>Potential clients compare several venues online. A dedicated conversion funnel gives Evergreen a focused digital destination where prospective clients can explore the venue, see actual event setups, review social proof, understand options, request packages, and schedule oculars.</p>
             </div>
 
-            <!-- 21. PROBLEM / OPPORTUNITY -->
-            <div class="mb-16">
-                <h2 class="text-2xl sm:text-3xl font-serif text-white mb-4">What If More People Who Are Looking for an Events Venue Found Evergreen Before They Chose Another Venue?</h2>
-                <p class="text-gray-400 text-sm leading-relaxed max-w-3xl font-light">
-                    Prospects looking through Facebook, Google, and Instagram view several venues before making an ocular request. A dedicated customer acquisition funnel gives Evergreen a clear digital home where traffic converts straight into qualified inquiries.
-                </p>
-            </div>
-
-            <!-- 22. FUNNEL SYSTEM -->
-            <div class="bg-gray-800 p-8 rounded-lg mb-16 border border-gray-700 text-center">
-                <h3 class="text-xs font-mono text-gray-400 uppercase tracking-widest mb-6">THE CUSTOMER ACQUISITION SYSTEM</h3>
-                <div class="text-xs sm:text-sm font-mono text-emerald-400 space-y-2">
-                    <p>FACEBOOK / INSTAGRAM / GOOGLE / QR CODES / REFERRALS</p>
-                    <p class="text-gray-500">↓</p>
-                    <p class="text-white font-bold">EVERGREEN FUNNEL</p>
-                    <p class="text-gray-500">↓</p>
-                    <p>VENUE GALLERY & EVENT INTEREST</p>
-                    <p class="text-gray-500">↓</p>
-                    <p class="text-yellow-400 font-bold">PACKAGE INQUIRY / LEAD CAPTURE</p>
-                    <p class="text-gray-500">↓</p>
-                    <p class="text-white font-bold">OCULAR VISIT & BOOKING OPPORTUNITY</p>
+            <!-- 21. Visual Acquisition System -->
+            <div class="proposal-card" style="margin-bottom: 4rem;">
+                <h3 style="text-align: center; font-size: 1.75rem; margin-bottom: 2rem;">Visual Customer Acquisition System</h3>
+                <div class="proposal-flow">
+                    <div class="flow-step">FACEBOOK • INSTAGRAM • GOOGLE • QR CODES • REFERRALS</div>
+                    <div class="flow-arrow">↓</div>
+                    <div class="flow-step" style="background: var(--color-primary); border: 1px solid var(--color-accent);">EVERGREEN FUNNEL</div>
+                    <div class="flow-arrow">↓</div>
+                    <div class="flow-step">VENUE / EVENT EXPERIENCE</div>
+                    <div class="flow-arrow">↓</div>
+                    <div class="flow-step">PACKAGE INQUIRY</div>
+                    <div class="flow-arrow">↓</div>
+                    <div class="flow-step">LEAD CAPTURE</div>
+                    <div class="flow-arrow">↓</div>
+                    <div class="flow-step">OCULAR VISIT</div>
+                    <div class="flow-arrow">↓</div>
+                    <div class="flow-step" style="background: var(--color-accent); color: #111827;">BOOKING OPPORTUNITY</div>
                 </div>
             </div>
 
-            <!-- 25. LAUNCH PACKAGE -->
-            <div class="bg-gradient-to-b from-gray-800 to-gray-850 border border-emerald-500/30 rounded-xl p-8 mb-16 max-w-xl mx-auto text-center">
-                <span class="bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs px-3 py-1 rounded-full uppercase tracking-wider font-semibold">Demo Proposal Offer</span>
-                <h3 class="font-serif text-2xl text-white mt-4 mb-2">EVERGREEN COURTYARD LAUNCH PACKAGE</h3>
-                <div class="my-4">
-                    <span class="text-gray-500 line-through text-sm mr-2">₱25,000</span>
-                    <span class="text-3xl font-bold text-white">₱12,000</span>
-                    <span class="text-xs text-gray-400"> (ONE-TIME)</span>
+            <!-- 22. Business Value -->
+            <div style="margin-bottom: 4rem;">
+                <div class="section-title">
+                    <h2>More Than a Website.</h2>
+                    <p>This is designed as a customer acquisition funnel — giving potential clients a clear path from discovering Evergreen to requesting information about their event.</p>
                 </div>
+                <div class="proposal-grid-4">
+                    <div class="proposal-card">
+                        <h4 style="color: var(--color-accent); font-size: 1.25rem; margin-bottom: 0.5rem;">ATTRACT</h4>
+                        <p style="font-size: 0.9rem; color: #94A3B8;">Capture attention from families and couples looking for venue spaces in Silang, Cavite.</p>
+                    </div>
+                    <div class="proposal-card">
+                        <h4 style="color: var(--color-accent); font-size: 1.25rem; margin-bottom: 0.5rem;">CONVERT</h4>
+                        <p style="font-size: 0.9rem; color: #94A3B8;">Turn browsing interest into clear, structured event package requests and ocular visits.</p>
+                    </div>
+                    <div class="proposal-card">
+                        <h4 style="color: var(--color-accent); font-size: 1.25rem; margin-bottom: 0.5rem;">CAPTURE</h4>
+                        <p style="font-size: 0.9rem; color: #94A3B8;">Collect useful lead details including preferred dates, guest counts, and event types.</p>
+                    </div>
+                    <div class="proposal-card">
+                        <h4 style="color: var(--color-accent); font-size: 1.25rem; margin-bottom: 0.5rem;">FOLLOW UP</h4>
+                        <p style="font-size: 0.9rem; color: #94A3B8;">Create actionable opportunities for meaningful direct conversations and bookings.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 23. What We Are Building -->
+            <div class="proposal-card" style="margin-bottom: 4rem;">
+                <h3 style="font-size: 1.75rem; margin-bottom: 1.5rem; text-align: center;">Funnel Specifications</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+                    <div>✓ Conversion-focused landing page</div>
+                    <div>✓ Mobile-first responsive layout</div>
+                    <div>✓ Authentic venue image gallery</div>
+                    <div>✓ Event-type segmentation</div>
+                    <div>✓ Package inquiry system</div>
+                    <div>✓ Ocular visit scheduling CTA</div>
+                    <div>✓ Authentic Google review integration</div>
+                    <div>✓ Location & directions integration</div>
+                    <div>✓ Lead capture form architecture</div>
+                    <div>✓ CTA positioning optimization</div>
+                </div>
+                <div style="border-top: 1px solid #334155; padding-top: 1.5rem; font-size: 0.875rem; color: #94A3B8;">
+                    <strong>Optional Integrations Available:</strong> CRM connectivity, Supabase database, Meta Pixel, Google Analytics, Auto-responders, Viber notifications, and WhatsApp messaging.
+                </div>
+            </div>
+
+            <!-- 24. Pricing Section -->
+            <div style="margin-bottom: 4rem;">
+                <div class="proposal-pricing-box">
+                    <h3 style="font-size: 1.5rem; color: #94A3B8; margin-bottom: 1rem;">EVERGREEN COURTYARD LAUNCH PACKAGE</h3>
+                    <div class="price-strike">NORMAL VALUE: ₱25,000</div>
+                    <div class="price-main">₱12,000</div>
+                    <div class="price-tag">ONE-TIME LAUNCH INVESTMENT</div>
+                    <p style="font-size: 0.95rem; color: #94A3B8; margin-bottom: 0;">Complete design, copywriting, mobile optimization, structural setup, and conversion architecture.</p>
+                </div>
+            </div>
+
+            <!-- 25. Risk Reversal -->
+            <div class="proposal-card" style="max-width: 700px; margin: 0 auto 4rem auto; text-align: center;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem;">7-Day Performance Commitment</h3>
+                <p style="font-size: 0.95rem; color: #94A3B8;">After launch, we'll review the funnel's agreed conversion points and identify any obvious friction in the customer journey. If adjustments are needed, we'll make the agreed optimization changes.</p>
+            </div>
+
+            <!-- 26. Implementation Timeline -->
+            <div style="margin-bottom: 4rem;">
+                <div class="section-title">
+                    <h2>Implementation Steps</h2>
+                </div>
+                <div class="proposal-timeline">
+                    <div class="timeline-step">
+                        <div class="timeline-num">STEP 01</div>
+                        <h4>Approve</h4>
+                        <p style="font-size: 0.8rem; color: #94A3B8; margin-top: 0.5rem;">Confirm project start.</p>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-num">STEP 02</div>
+                        <h4>Finalize</h4>
+                        <p style="font-size: 0.8rem; color: #94A3B8; margin-top: 0.5rem;">Confirm details & links.</p>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-num">STEP 03</div>
+                        <h4>Build</h4>
+                        <p style="font-size: 0.8rem; color: #94A3B8; margin-top: 0.5rem;">Finalize funnel code.</p>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-num">STEP 04</div>
+                        <h4>Test</h4>
+                        <p style="font-size: 0.8rem; color: #94A3B8; margin-top: 0.5rem;">Verify mobile & forms.</p>
+                    </div>
+                    <div class="timeline-step">
+                        <div class="timeline-num">STEP 05</div>
+                        <h4>Launch</h4>
+                        <p style="font-size: 0.8rem; color: #94A3B8; margin-top: 0.5rem;">Publish live system.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 27. Final Pitch -->
+            <div style="text-align: center; max-width: 750px; margin: 0 auto 4rem auto;">
+                <h2 style="font-size: 2.25rem; margin-bottom: 1rem;">Ready to Turn Evergreen's Online Attention Into More Qualified Event Inquiries?</h2>
+                <p style="color: #94A3B8; font-size: 1.1rem; margin-bottom: 2rem;">Your venue already has the setting, real event photos, customer feedback, and multiple celebration options. The goal of this funnel is to bring those elements together into a clear path from discovery to inquiry.</p>
+            </div>
+
+            <!-- 28. Approval Form -->
+            <div class="proposal-card" style="max-width: 600px; margin: 0 auto;">
+                <h3 style="text-align: center; font-size: 1.75rem; margin-bottom: 1.5rem;">Approve & Start</h3>
                 
-                <ul class="text-left text-xs text-gray-300 space-y-2 my-6 border-y border-gray-700 py-4">
-                    <li class="flex items-center">✓ Custom High-Converting Landing Page</li>
-                    <li class="flex items-center">✓ Mobile-First Optimization</li>
-                    <li class="flex items-center">✓ Authentic Review Integration</li>
-                    <li class="flex items-center">✓ Structured Lead Capture & Ocular System</li>
-                    <li class="flex items-center">✓ 7-Day Optimization Commitment</li>
-                    <li class="text-gray-500 pt-2">* Optional integrations (CRM, Supabase, Meta Pixel, Auto-responders) available upon request.</li>
-                </ul>
+                <div id="proposalDemoAlert" class="demo-alert" style="background: #1E293B; border-color: var(--color-accent); color: #FFFFFF;">
+                    <strong style="color: var(--color-accent);">You're In. 🌿</strong><br>
+                    Thank you. We'll coordinate the final assets, contact details, and launch requirements with you.
+                </div>
 
-                <a href="#approve" class="block w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded transition">APPROVE & START</a>
-            </div>
-
-            <!-- 30. APPROVAL FORM -->
-            <div id="approve" class="max-w-xl mx-auto bg-gray-800 p-8 rounded-lg border border-gray-700">
-                <h3 class="text-xl font-bold text-white mb-4">Approve & Start</h3>
-                <form class="space-y-4 text-xs">
-                    <div>
-                        <label class="block text-gray-400 mb-1">OWNER / MANAGER NAME</label>
-                        <input type="text" class="w-full bg-gray-900 border border-gray-700 p-3 rounded text-white focus:outline-none focus:border-emerald-500" />
+                <form id="approvalForm" onsubmit="handleProposalSubmit(event)">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label style="color: #E2E8F0;">Owner / Manager Name</label>
+                            <input type="text" class="form-control" style="background: #0F172A; color: #FFFFFF; border-color: #334155;" required placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label style="color: #E2E8F0;">Mobile / Viber</label>
+                            <input type="tel" class="form-control" style="background: #0F172A; color: #FFFFFF; border-color: #334155;" required placeholder="Contact details">
+                        </div>
+                        <div class="form-group">
+                            <label style="color: #E2E8F0;">Target Launch Date</label>
+                            <input type="date" class="form-control" style="background: #0F172A; color: #FFFFFF; border-color: #334155;">
+                        </div>
+                        <div class="form-group">
+                            <label style="color: #E2E8F0;">Optional Message</label>
+                            <textarea class="form-control" style="background: #0F172A; color: #FFFFFF; border-color: #334155;" rows="3" placeholder="Any specific requirements..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-accent btn-full" style="margin-top: 1rem;">APPROVE & START</button>
                     </div>
-                    <div>
-                        <label class="block text-gray-400 mb-1">MOBILE / VIBER</label>
-                        <input type="tel" class="w-full bg-gray-900 border border-gray-700 p-3 rounded text-white focus:outline-none focus:border-emerald-500" />
-                    </div>
-                    <div>
-                        <label class="block text-gray-400 mb-1">PREFERRED LAUNCH DATE</label>
-                        <input type="date" class="w-full bg-gray-900 border border-gray-700 p-3 rounded text-white focus:outline-none focus:border-emerald-500" />
-                    </div>
-                    <button type="button" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded transition">APPROVE & START DEMO</button>
                 </form>
             </div>
-        </div>
-    </section>
 
+        </div>
+    </div>
+
+    <!-- JavaScript Interactions -->
+    <script>
+        // Pre-select Event Type from Quick Select Cards
+        function selectEventType(type) {
+            const selectEl = document.getElementById('eventType');
+            if (selectEl) {
+                selectEl.value = type;
+            }
+            const inquirySection = document.getElementById('inquiry');
+            if (inquirySection) {
+                inquirySection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Gallery Filtering
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            items.forEach(item => {
+                if (category === 'all' || item.getAttribute('data-category') === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Modal Lightbox
+        function openLightbox(src) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImg');
+            modal.style.display = 'flex';
+            modalImg.src = src;
+        }
+
+        function closeLightbox() {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+
+        // Handle Customer Inquiry Form Submission (Demo State)
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const alertBox = document.getElementById('formDemoAlert');
+            alertBox.style.display = 'block';
+            document.getElementById('inquiryForm').reset();
+            alertBox.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Handle Proposal Approval Submission (Demo State)
+        function handleProposalSubmit(event) {
+            event.preventDefault();
+            const alertBox = document.getElementById('proposalDemoAlert');
+            alertBox.style.display = 'block';
+            document.getElementById('approvalForm').reset();
+        }
+    </script>
 </body>
 </html>
