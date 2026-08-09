@@ -129,7 +129,7 @@
     .btn-gold:hover { background-color: #B28F4A; }
     .btn-full { width: 100%; }
 
-    /* Visual Hero Section */
+    /* Hero Section */
     .hero {
       position: relative;
       padding: 6rem 0;
@@ -168,7 +168,7 @@
     .section-title h2 { font-size: 2.25rem; color: var(--bg-accent); margin-bottom: 0.5rem; }
     .section-title p { color: var(--text-muted); font-size: 1.05rem; }
 
-    /* Event Types Cards */
+    /* Events We Accommodate Cards */
     .events-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
     .event-card {
       background: var(--bg-surface);
@@ -185,7 +185,7 @@
     .event-card h3 { font-size: 1.3rem; margin-bottom: 0.5rem; color: var(--brand-green); }
     .event-card p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.25rem; }
 
-    /* Asymmetric Masonry-style Gallery */
+    /* SECTION 1: VENUE GALLERY MASONRY */
     .gallery-masonry {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -212,13 +212,14 @@
       .gallery-masonry { grid-template-columns: repeat(2, 1fr); }
       .gallery-item.tall { grid-row: span 1; height: 260px; }
       .gallery-item.standard { height: 260px; }
+      .nav-links { display: none; }
     }
     @media (max-width: 550px) {
       .gallery-masonry { grid-template-columns: 1fr; }
       .gallery-item.tall, .gallery-item.standard { height: 280px; }
     }
 
-    /* Emotional Split Sections (Wedding, Celebration, Catering) */
+    /* SECTIONS 2 & 3: EXPERIENCE SPLIT SECTIONS */
     .split-section {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -229,11 +230,10 @@
 
     @media (max-width: 850px) {
       .split-section { grid-template-columns: 1fr; gap: 2rem; }
-      .nav-links { display: none; }
       .split-section.reverse-mobile { display: flex; flex-direction: column-reverse; }
     }
 
-    /* Food & Catering Box */
+    /* SECTION 4: FOOD & CATERING BOX */
     .catering-box {
       background: var(--bg-card);
       border-radius: 12px;
@@ -416,7 +416,7 @@
     </div>
   </header>
 
-  <!-- Visual Hero Section -->
+  <!-- Hero Section -->
   <section class="hero">
     <div class="container">
       <div class="hero-content">
@@ -471,11 +471,11 @@
     </div>
   </div>
 
-  <!-- Event Types Visual Cards -->
+  <!-- Events We Accommodate Section -->
   <section class="section" id="events">
     <div class="container">
       <div class="section-title">
-        <h2>Made for Meaningful Celebrations</h2>
+        <h2>Events We Accommodate</h2>
         <p>Explore event options tailored to your upcoming gathering.</p>
       </div>
       <div class="events-grid">
@@ -533,12 +533,12 @@
     </div>
   </section>
 
-  <!-- Restored Prominent Venue Gallery -->
+  <!-- SECTION 1: VENUE GALLERY -->
   <section class="section" id="gallery" style="background: var(--bg-surface);">
     <div class="container">
       <div class="section-title">
-        <h2>See Evergreen Courtyard</h2>
-        <p>Take a closer look at the spaces, setups, food, and details that make Evergreen a place for meaningful celebrations.</p>
+        <h2>See Evergreen Courtyard.</h2>
+        <p>Take a closer look at the venue, event setups and details that make Evergreen a beautiful place for celebrations.</p>
       </div>
       
       <div class="gallery-masonry">
@@ -564,42 +564,42 @@
     </div>
   </section>
 
-  <!-- Wedding Experience Section -->
+  <!-- SECTION 2: WEDDING EXPERIENCE -->
   <section class="section">
     <div class="container">
       <div class="split-section reverse-mobile">
         <img src="images/evergreen-garden-wedding.jpg" alt="Wedding at Evergreen Courtyard" class="split-img">
         <div>
-          <h2 style="font-size: 2.25rem; margin-bottom: 1rem; color: var(--bg-accent);">A Beautiful Setting for Your Special Day</h2>
-          <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 1.05rem;">Create meaningful memories surrounded by the people who matter most. Evergreen Courtyard provides a tranquil background designed for photos, ceremony moments, and evening dinners.</p>
+          <h2 style="font-size: 2.25rem; margin-bottom: 1rem; color: var(--bg-accent);">A Beautiful Setting for Your Special Day.</h2>
+          <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 1.05rem;">Create meaningful memories surrounded by the people who matter most.</p>
           <button onclick="selectEventAndScroll('Wedding')" class="btn btn-gold">INQUIRE FOR YOUR WEDDING</button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Celebration Experience Section -->
+  <!-- SECTION 3: CELEBRATION EXPERIENCE -->
   <section class="section" style="background: var(--bg-card);">
     <div class="container">
       <div class="split-section">
         <div>
-          <h2 style="font-size: 2.25rem; margin-bottom: 1rem; color: var(--bg-accent);">Made for Milestones</h2>
-          <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 1.05rem;">From family gatherings to once-in-a-lifetime celebrations, Evergreen Courtyard gives your guests a place to gather, celebrate, and make memories in Silang, Cavite.</p>
-          <a href="#inquiry" class="btn btn-primary">PLAN YOUR CELEBRATION</a>
+          <h2 style="font-size: 2.25rem; margin-bottom: 1rem; color: var(--bg-accent);">Made for Milestones.</h2>
+          <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 1.05rem;">From birthdays and kiddie parties to baptisms and private gatherings, Evergreen Courtyard gives your guests a place to gather, celebrate and make memories.</p>
+          <a href="#inquiry" class="btn btn-primary">PLAN YOUR EVENT</a>
         </div>
         <img src="images/evergreen-birthday-setup.jpg" alt="Celebration at Evergreen Courtyard" class="split-img">
       </div>
     </div>
   </section>
 
-  <!-- Food / Catering Visual Section -->
+  <!-- SECTION 4: FOOD & CATERING -->
   <section class="section">
     <div class="container">
       <div class="catering-box">
         <div class="split-section">
           <div>
-            <h2 style="font-size: 2rem; margin-bottom: 1rem; color: var(--brand-green);">Good Food Belongs at Every Celebration</h2>
-            <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Food is part of the experience. See what guests have shared about their dining and catering experience at Evergreen Courtyard.</p>
+            <h2 style="font-size: 2rem; margin-bottom: 1rem; color: var(--brand-green);">Good Food Belongs at Every Celebration.</h2>
+            <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 1.05rem;">Guests have shared positive experiences about the food and catering at Evergreen Courtyard.</p>
             <button onclick="selectEventAndScroll('Private Event')" class="btn btn-secondary">ASK ABOUT FOOD & CATERING</button>
           </div>
           <img src="images/evergreen-catering-setup.jpg" alt="Catering Food Spread" class="split-img" style="height: 300px;">
@@ -637,24 +637,6 @@
         <span style="color: var(--brand-gold); font-size: 1.1rem;">★★★★★</span><br>
         <strong>4.8 Google Rating</strong> — 16 Reviews<br>
         <span>Real experiences from guests who visited Evergreen Courtyard.</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Location Section -->
-  <section class="section" id="location">
-    <div class="container">
-      <div class="location-box">
-        <div style="font-size: 2rem; margin-bottom: 0.5rem;">📍</div>
-        <h2 style="margin-bottom: 0.5rem;">Find Evergreen Courtyard</h2>
-        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
-          <strong>Evergreen Courtyard Events Place & Venue</strong><br>
-          Pooc II, Silang, Cavite, Philippines
-        </p>
-        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-          <button onclick="openDirections()" class="btn btn-primary">GET DIRECTIONS</button>
-          <a href="#inquiry" class="btn btn-secondary">MESSAGE US</a>
-        </div>
       </div>
     </div>
   </section>
@@ -703,8 +685,7 @@
           </form>
 
           <div id="inquirySuccess" class="success-state">
-            🌿 <strong>Thank You!</strong><br>
-            Your event details are ready for the next step. Once the contact integration is connected, submissions can be routed to the Evergreen team.
+            Thank you! 🌿 Your event details are ready for the next step.
           </div>
         </div>
 
@@ -736,6 +717,24 @@
     </div>
   </section>
 
+  <!-- Location Section -->
+  <section class="section" id="location">
+    <div class="container">
+      <div class="location-box">
+        <div style="font-size: 2rem; margin-bottom: 0.5rem;">📍</div>
+        <h2 style="margin-bottom: 0.5rem;">Find Evergreen Courtyard</h2>
+        <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+          <strong>Evergreen Courtyard Events Place & Venue</strong><br>
+          Pooc II, Silang, Cavite, Philippines
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <button onclick="openDirections()" class="btn btn-primary">GET DIRECTIONS</button>
+          <a href="#inquiry" class="btn btn-secondary">MESSAGE US</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Final Customer CTA Block -->
   <section class="container">
     <div class="customer-cta-block">
@@ -748,7 +747,7 @@
     </div>
   </section>
 
-  <!-- PRIVATE CLIENT PROPOSAL DIVIDER -->
+  <!-- PROPOSAL DIVIDER -->
   <div class="container">
     <div class="proposal-divider">
       <span class="proposal-divider-badge">Private Client Proposal</span>
@@ -763,7 +762,7 @@
           PRIVATE CLIENT PROPOSAL
         </p>
         <h2 style="font-size: 2rem; margin-top: 0.25rem;">Evergreen Courtyard Launch Package</h2>
-        <p style="color: var(--text-muted); font-size: 0.95rem;">Prepared exclusively for: <strong>Evergreen Courtyard Events Place & Venue</strong></p>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">Prepared exclusively for: <strong>EVERGREEN COURTYARD EVENTS PLACE & VENUE</strong></p>
       </div>
 
       <div style="margin-bottom: 2.5rem;">
